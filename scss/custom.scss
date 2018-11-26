@@ -1,0 +1,28 @@
+/*Colors*/
+
+$blue: #433AAB;
+$light-blue: #779EE1;
+$dark-blue: #324691;
+
+
+$color-1: $blue;
+$color-2: $light-blue;
+$color-3: $dark-blue;
+
+/*Paddings*/
+
+$pd-sm: 1em;
+$pd-md: 1.5em;
+$pd-lg: 2em;
+/* Mixins */
+@mixin shadow{
+	box-shadow: 2px 1px 8px 1px rgba(0,0,0,0.3);
+	
+}
+
+/*Fonts*/
+$font-1: 'Montserrat', sans-serif;
+$font-2: 'Cormorant Garamond', serif;
+
+
+

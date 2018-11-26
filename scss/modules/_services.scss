@@ -1,0 +1,60 @@
+/***********************
+*------- Services --------*
+***********************/
+
+.service{
+	height: 15em;
+	background-image: url("../assets/images/v-1.png");
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.services{
+	margin-bottom: $pd-lg;
+}
+.service-wrapper{
+	margin-bottom: $pd-md;
+}
+.service-name{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 10;
+	transform: translate(-50%, -50%);
+	border: white solid 2px;
+	background-color: rgba($color-3, 0.75);
+	color: white;
+	padding: $pd-sm/2 $pd-sm;
+	font-size: 1.45em;
+	@include shadow();
+}
+@media only screen and (min-width: 576px) { 
+
+}
+@media only screen and (min-width: 768px) { 
+	.services-container{
+		@include make-row();
+		margin: 0;
+		padding-top: $pd-lg;
+	}
+	.service-wrapper{
+		@include make-col(6);
+		padding: 0 $pd-sm;
+		margin-bottom: $pd-lg;
+	}
+
+} 
+@media only screen and (min-width: 991px) { 
+	.service{
+		height: 20em;
+	}
+	.service-name{
+		font-size: 1.55em;
+	}
+}
+@media only screen and (min-width: 1199px) { 
+	.service-wrapper{
+		padding: 0 $pd-md;
+		margin-bottom: $pd-md*2;
+	}
+} 

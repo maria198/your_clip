@@ -1,0 +1,72 @@
+/***********************
+*------- Banner --------*
+***********************/
+
+.banner{
+	height: auto;
+	width: 100%;
+
+	position: relative;
+	
+	.banner-background{
+		background-image: url("../assets/fon-main.png");
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		height: 100%;
+		box-shadow: inset 0px 2px 8px rgba(0,0,0,0.3);
+	}
+}
+.banner-container{
+	background-color: rgba($color-2 , 0.3);
+	padding: $pd-md;
+}
+.hero{
+	height: auto;
+	width: 100%;
+}
+.hero-container{
+	flex: 1 0 1em;
+	padding: $pd-sm;
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px 2px rgba(blue,0.4);
+	border: solid white 2px;
+}
+
+
+@media only screen and (min-width: 576px) { 
+	.banner{
+		height: calc(100vh - 5em);
+	}
+	.banner-container{
+		background-color: rgba(0,0,0,0);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate( -50%, -50%);
+		width: 70%;
+	}
+	.hero{
+		background-color: rgba($color-2 , 0.5);
+		padding: $pd-md;
+		@include shadow();
+	}
+}
+@media only screen and (min-width: 768px) { 
+	.banner{
+			height: calc(100vh - 6em);
+	}
+	.banner-container{
+		width: 60%;
+		max-width: 35em;
+	}
+} 
+@media only screen and (min-width: 991px) { 
+	.banner{
+			height: calc(100vh - 6.5em);
+	}
+}
+@media only screen and (min-width: 1199px) { 
+
+} 

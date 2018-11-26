@@ -1,0 +1,50 @@
+/***********************
+*------- Latest Works --------*
+***********************/
+
+ .latest-works{
+ 	background-color: lighten($color-2, 17);
+ 	padding-bottom: $pd-lg;
+ 	.section-header{
+ 		color: lighten($color-3, 10);
+ 	}
+ }
+ .work-wrapper{
+ 	margin-bottom: $pd-md;
+ }
+ .work{
+ 	height: 15em;
+	background-image: url("../assets/images/v-3.png");
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	@include shadow();
+ }
+ .work-inside{
+ 	display: none;
+ }
+
+@media only screen and (min-width: 576px) { 
+	
+}
+@media only screen and (min-width: 768px) { 
+	.latest-container{
+		@include make-row();
+		margin: 0;
+		padding-top: $pd-lg;
+	}
+	.work-wrapper{
+		@include make-col(4);
+		/*padding: 0 $pd-sm;*/
+		margin-bottom: $pd-lg;
+	}
+	.work{
+		box-shadow: none;
+	}
+} 
+@media only screen and (min-width: 991px) { 
+	
+}
+@media only screen and (min-width: 1199px) { 
+
+} 

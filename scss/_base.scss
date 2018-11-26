@@ -1,0 +1,61 @@
+/***********************
+*------- Base --------*
+***********************/
+
+h1,h2,h3,h4,h5,h6 {
+	margin:0;
+	font-weight: 300;
+}
+ul{
+	list-style-type: none;
+	padding:0;
+	margin:0;
+}
+.row{
+	margin:0;
+}
+a{	
+	color: white;
+	&:hover{
+		text-decoration: none;
+		color:lighten( $color-3, 45);
+	}
+}
+
+.wrapper{
+	overflow-x: hidden;
+	font-family: $font-1;
+	color: #333;
+	/*min-height: 100vh;*/
+}
+.section-header{
+	text-align: center;
+	font-size: 1.25em;
+	padding-top: $pd-sm;
+	margin-bottom: $pd-sm;
+}
+.section-text{
+	padding: $pd-md $pd-sm 0 $pd-sm;
+	font-size: 1.1em;
+}
+ 
+
+@media only screen and (min-width: 576px) { 
+
+}
+@media only screen and (min-width: 768px) { 
+	.section-text{
+		text-align: center;
+		font-size: 1.25em;
+	}
+	.section-header{
+		font-size: 1.4em;
+		h2{font-weight: 500 }
+	}
+} 
+@media only screen and (min-width: 991px) { 
+	
+}
+@media only screen and (min-width: 1199px) { 
+
+} 

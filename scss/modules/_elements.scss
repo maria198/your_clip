@@ -1,0 +1,65 @@
+/***********************
+*------- Elements --------*
+***********************/
+
+
+.frame{
+	height: 100%;
+	width:100%;
+	position: relative;
+	&:before{
+		content:'';
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 3;
+		border: solid white 3px;
+		margin: $pd-md;
+		height: calc(100% - #{$pd-md*2});
+		width: calc(100% - #{$pd-md*2});
+	}
+	
+}
+
+.main-btn{
+	width: 80%;
+	background-color: rgba($color-1 , 0.6);
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1em;
+	margin: $pd-sm auto 0 auto;
+	border: white solid 2px;
+	@include shadow();
+	a{
+		display: block;
+		padding: $pd-sm;
+	}
+}
+.romb{
+	position:relative;
+	&:after{
+		content:'';
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translateY(-50%) rotate(45deg);
+		margin-top: $pd-sm;
+		height: 0.55em;
+		width: 0.55em;
+		background-color: $color-2;
+
+	}
+}
+@media only screen and (min-width: 576px) { 
+
+}
+@media only screen and (min-width: 768px) { 
+
+} 
+@media only screen and (min-width: 991px) { 
+
+}
+@media only screen and (min-width: 1199px) { 
+
+} 

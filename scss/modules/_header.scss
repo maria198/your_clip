@@ -1,0 +1,157 @@
+/***********************
+*------- Header --------*
+***********************/
+
+header{
+	.top{
+		background-color: $color-3;
+		color: lighten( $color-2, 15);
+	}
+	.nav-panel{
+		background-image: linear-gradient( to right, $color-1, $color-2);
+		color: white;
+		@include shadow();
+		.row{
+			margin:0;
+			height: 3em;
+		}
+	}
+	.top, .phone-nav, .nav-menu{
+		display: none;
+	}
+}
+.logo{
+	.logo-container{
+		img{
+			height: 2em;
+		}
+	}
+}
+.bars{
+	i{
+		font-size: 1.5em;
+	}
+}
+
+@media only screen and (min-width: 576px) { 
+	header{
+		.top{
+			display: block;
+			.row{
+				height: 2em;
+			}
+			.slogan{
+				font-size: 0.9em;
+				font-weight: 200;
+			}
+		}
+	}
+	.media-container{
+		a{
+			color: lighten( $color-2, 15);
+			&:hover{
+				color: lighten( $color-3, 25);
+			}
+		}
+		i{
+			padding-left: 1em;
+		}
+	}
+}
+@media only screen and (min-width: 768px) { 
+	header{
+		.nav-menu, .phone-nav{
+			display: block;
+		}
+		.bars{
+			display: none;
+		}
+		.nav-panel{
+			.row{
+				height: 4em;
+			}
+		}
+	}
+
+	nav{
+		flex: 1 0 20%;
+		margin-left: 2em;
+		.nav-menu{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			.nav-link{
+				color: white;
+				&:hover{
+					color:lighten( $color-3, 45);
+				}
+			}
+			.nav-item{
+				padding-right: 1.75em;
+				font-size: 1.15em;
+				font-weight: 300;
+			}
+
+		}
+	}
+	.logo{
+		.logo-container{
+			img{
+				height: 2.5em;
+			}
+		}
+	}
+	.phone-nav{
+		i{
+			font-size: 1.5em;
+			transform: rotate(-25deg);
+		}
+		.phone-number{
+			margin-left: 0.5em;
+		}
+	}
+} 
+@media only screen and (min-width: 991px) { 
+	nav{
+		.nav-menu{
+			.nav-item{
+				font-size: 1.25em;
+			}
+		}
+	}
+	.phone-nav{
+		i{
+			font-size: 1.75em;
+		}
+		.phone-number{
+			font-size: 1.25em;
+		}
+	}
+	header{
+		.top{
+			.row{
+				height: 2.5em;
+			}
+			.slogan{
+				font-size: 1em;
+			}
+		}
+	}
+	.media-container{
+		i{
+			font-size: 1.25em;
+		}
+	}
+}
+@media only screen and (min-width: 1199px) { 
+	nav{
+		.nav-menu{
+			.nav-item{
+				padding-right: 2.5em;
+				font-size: 1.35em;
+				font-weight: 300;
+			}
+
+		}
+	}
+} 
