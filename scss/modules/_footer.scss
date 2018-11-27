@@ -1,11 +1,11 @@
 /***********************
-*------- Testimonials --------*
+*------- Footer --------*
 ***********************/
 
 
-.testimonials {
-		background-color: lighten($color-1, 60);
-		padding-bottom: $pd-lg;
+footer{
+	background-color: $color-3;
+	color: lighten( $color-2, 15);;
 }
 
 @media only screen and (min-width: 576px) { 
