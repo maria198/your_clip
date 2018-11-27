@@ -36,6 +36,20 @@
 		padding: $pd-sm;
 	}
 }
+.submit-btn{
+	width: 90%;
+	background-color: lighten(rgba($color-2,0.5) , 15);
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1em;
+	margin: $pd-sm auto 0 auto;
+	border: white solid 2px;
+	@include shadow();
+	padding: $pd-sm/2 $pd-sm;
+	max-width: 20em;
+
+}
 .romb{
 	position:relative;
 	&:after{

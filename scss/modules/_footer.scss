@@ -5,14 +5,64 @@
 
 footer{
 	background-color: $color-3;
-	color: lighten( $color-2, 15);;
+	color: lighten( $color-2, 15);
+	.media-container{
+		a{
+			color: lighten( $color-2, 15) !important;
+			&:hover{
+				color: lighten( $color-3, 25);
+			}
+		}
+		i{
+			font-size: 1.25em;
+			margin-right: $pd-sm;
+			padding-bottom: $pd-sm;
+		}
+	}
+	h5{
+		font-size: 1em;
+	}
+	h6{
+		font-size: 0.8em;
+	}
+	.col-sm-12{
+		padding-bottom: $pd-sm;
+		padding-top: $pd-sm;
+	}
+	.phone-footer{
+		padding-top: $pd-sm;
+		.phone-number{
+			font-size: 1.15em;
+		}
+		i{
+			font-size: 1.25em;
+			margin-right: $pd-sm/2;
+		}
+	}
 }
 
 @media only screen and (min-width: 576px) { 
-
+	footer{
+		.media-container{
+			i{
+				padding-left: 0;
+			}
+		}
+	}
 }
 @media only screen and (min-width: 768px) { 
-
+	footer{
+		.media-container{
+			i{
+				margin-right: 0;
+				padding-bottom: $pd-sm;
+				padding-left: $pd-sm;
+			}
+		}
+		.col-sm-12.right{
+			text-align: right;
+		}
+	}
 } 
 @media only screen and (min-width: 991px) { 
 
