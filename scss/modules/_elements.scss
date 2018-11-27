@@ -48,17 +48,16 @@
 	@include shadow();
 	padding: $pd-sm/2 $pd-sm;
 	max-width: 20em;
-
 }
 .romb{
 	position:relative;
 	&:after{
 		content:'';
 		position: absolute;
-		top: 100%;
-		left: 50%;
+		top: calc(100% + #{$pd-sm});
+		left: calc(50% - 0.225em);
 		transform: translateY(-50%) rotate(45deg);
-		margin-top: $pd-sm;
+		/*margin: $pd-sm;*/
 		height: 0.55em;
 		width: 0.55em;
 		background-color: $color-2;
